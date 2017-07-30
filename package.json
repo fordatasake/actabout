@@ -1,0 +1,28 @@
+{
+  "name": "actabout",
+  "version": "1.0.0",
+  "description": "backend for ACT About Govhack 2017",
+  "main": "index.js",
+  "scripts": {
+    "start:nodemon": "nodemon --exec 'node ./node_modules/babel-cli/bin/babel-node.js index.js'",
+    "start": "node ./node_modules/babel-cli/bin/babel-node.js index.js",
+    "_ngrok-comment": " this should match whatever is port used in app.listen()",
+    "ngrok": "/Applications/ngrok http 5000" 
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.3",
+    "lodash": "^4.17.4",
+    "mocha": "^3.4.2",
+    "mongoose": "^4.11.4",
+    "morgan": "^1.8.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "supertest": "^3.0.0"
+  }
+}
