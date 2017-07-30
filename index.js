@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 mongoose.Promise = global.Promise;
 
 const MONGO_USER = "REDACTED";
-const MONGO_PWD = "REDACTED"
+const MONGO_PWD = "REDACTED";
 const MONGODB_CONNECTION_STRING = "mongodb://" + MONGO_USER + ":" + MONGO_PWD + "@ds127883.mlab.com:27883/act-about-db";
 
 mongoose.connect(MONGODB_CONNECTION_STRING, {useMongoClient: true});
